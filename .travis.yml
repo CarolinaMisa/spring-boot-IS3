@@ -1,2 +1,6 @@
 language: java
 script: "mvn -Dmaven.test.failure.ignore=true clean package"
+deploy:
+  provider: heroku
+  api_key:
+    secure: "5b6d328a-0809-478c-87ae-10aa5eb95582"
